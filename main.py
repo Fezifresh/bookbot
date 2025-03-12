@@ -1,3 +1,5 @@
+from stats import wordcount
+
 def main():
     book_path = 'books/frankenstein.txt'
     number_of_characters = count_characters(book_path)
@@ -34,10 +36,7 @@ def count_characters(book_path):
     return dict_of_characters
 
 
-def wordcount(book_path):    
-    words = book_text(book_path).split()
-    wordcount = len(words)
-    return wordcount
+
 
 def book_text(book_path):
     book_text = open(book_path)
